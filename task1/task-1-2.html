@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="UTF-8">
+		<title>task12</title>
+		<style>
+			body{
+				background: lightgray;
+				font-family: "黑体";
+			}
+			header{
+				background: #333;
+				height: 60px;
+		    	width: 100%;
+			}
+			footer{
+				background: #000;
+				font-size: 13px;
+				color: #fff;
+				text-align: center;
+				padding: 20px;
+			}
+			div{
+				margin: 20px;
+				padding: 35px 20px;
+				border: 1px solid #cbcbcb;
+				box-shadow: 2px 2px 0 0 #848484;
+				background: #fff;
+			}
+			.hacky {
+				float: right;
+				margin: 12px;
+			}
+			.hacky li{
+				float: left;
+				margin-right: 25px; 
+				font-style: initial;
+				color:white;
+			}
+			.button{
+				background-color: royalblue;
+			    color: white;
+			    text-align: center;
+			    border-radius: 10px;
+			    height: 38px;
+			    width: 100%;
+			    font-weight: 800;
+			    font-size: 15px;
+			}
+			.left {
+			    position: absolute;
+			    right: 65%;
+			}
+			.right {
+			    position: relative;
+			    left: 35%;
+			    padding-left: 0;
+			    margin-bottom: 16px;
+			}
+			textarea.right {
+			    width: 55%;
+			    height: 8em;
+			}
+			#tablefoot {
+				background-color: rgb(204, 204, 204);
+			}
+			.table table th {
+			    background-color: #000;
+			    color: #fff;
+			}
+			.table table td, .table table th {
+			    padding: 5px;
+			}
+			.table table {
+			    width: 97%;
+			    padding-left: 0;
+			    text-align: left;
+			    margin: 0 auto;
+			    border-collapse: collapse;
+			}
+			.table table, .table table td, .table table th {
+			    border: 1px solid rgb(204, 204, 204);
+			}
+			.images div {
+			    border: 1px #000 solid;
+			    width: 20%;
+			    margin-left: 80px;
+			    margin-bottom: 20px;
+			    padding-left: 0;
+			    text-align: center;
+			}
+			.images div img {
+			    width: 80%;
+			    padding: 10px;
+			}
+			.images p {
+				text-align: center;
+			    padding-left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="hacky">
+				<li>导航链接一</li>
+				<li>导航链接二</li>
+				<li>导航链接三</li>
+				<li>导航链接四</li>
+			</ul>
+		</header>
+		
+		<div>
+		<h2>文章一级标题</h2>
+		<h3>文章二级标题</h3>
+		<span >文章作者 文章发表时间</span>
+		<p>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，</br>换行了
+		</br>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，换行了
+		<br>这是个很长很长的段落，这是个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>
+		这是个很长很长的段落，这是个很长很长的段落，<strong>这里有个粗体字</strong>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落。</p>
+		<img src="img/hacky1.jpg" height="300" width="400">
+		<p>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，
+		换行了</br>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，<strong>这里有个粗体字</strong>这是个很长很长的段落，这是个很长很长的段落，
+		<a href="http://ife.baidu.com">这里有一个链接点击打开新窗口链接到http://ife.baidu.com</a>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，
+		这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落。</p>
+		</div>
+		
+		<div>
+		<h2>另一篇文章一级标题</h2>
+		<h2>文章二级标题</h2>
+		<p>文章作者 文章发表时间</p>
+		<p>这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，</br>换行了</br>
+			这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，换行了<br>这是个很长很长的段落，这是个很长很长的段落，
+			<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是个很长很长的段落，这是个很长很长的段落，<strong>这里有个粗体字</strong>
+			这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落，这是个很长很长的段落。
+		</p>
+		<img src="img/hacky1.jpg" height="280" width="360">
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+		</div>
+		
+		<div class="images">
+			<h2>图片</h2>
+			<div>
+				<p>好看的图片</p>
+				<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+			<p>好看的图片</p>
+			<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+			<p>好看的图片</p>
+			<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+			<p>好看的图片</p>
+			<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+				<p>好看的图片</p>
+				<img src="img/hacky1.jpg" height="160">
+			</div>
+			<div>
+			<p>好看的图片</p>
+			<img src="img/hacky1.jpg" height="160">
+			</div>
+		</div>
+		
+		<div class="table">
+			<h2>最后一篇文章一级标题</h2>
+			<h2>文章二级标题</h2>
+			<p>文章作者 文章发表时间</p>
+			<ol>
+			<li>排名1</li>
+			<li>排名2</li>
+			<li>排名3</li>
+			</ol>
+			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+			
+			<table border="1">
+			<tr>
+				<th>表头</th>
+				<th>表头</th>
+				<th>表头</th>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内容单元格</td>
+				<td>表内容单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr id="tablefoot">
+				<td>总计</td>
+				<td colspan="2">1000</td>
+			</tr>
+			</table>
+		</div>
+		
+		<div>
+			<h3>这里以后是一个侧栏，这里是侧栏的标题</h3>
+			<span class="left">请输入邮箱地址：</span>
+			<input class="right" type="text" name="" value="这是一个文本输入框">
+			<p class="right">邮箱地址请按要求格式输入</p>
+			<span class="left">请输入密码：</span>
+			<input class="right" type="text" name="" value="这是一个文本输入框">
+			</br>
+			<span class="left">请重复输入密码：</span>
+			<input class="right" type="text" name="" value="这是一个文本输入框">
+			<p class="right">密码请为6-16位英文数字</p>	
+			<span class="left">性别：</span>
+			<span class="right">
+                <label><input type="radio" name="sex" value="man" checked="checked">男</label>
+				<label><input type="radio" name="sex" value="woman">女</label>
+          	</span>
+			</br></br>
+			<span class="left">城市：</span>	
+			<select class="right">
+				<option value="" selected="true">北京</option>
+				<option value="">上海</option>
+				<option value="">深圳</option>
+				<option value="">杭州</option>
+				<option value="">成都</option>
+			</select>
+			</br>
+			<span class="left">爱好：</span>
+			<span class="right">
+				<label><input type="checkbox" name="">运动</label>
+				<label><input type="checkbox" name="">艺术</label>
+				<label><input type="checkbox" name="">科学</label>
+			</span>
+			</br></br>
+			<span class="left">个人描述：</span>
+			<textarea class="right">这是一个多行输入框，输入您的个人描述</textarea>
+			</br>
+			<input type="submit" class="button"  value="确认提交">
+		</div>
+			
+		<footer>
+				版权所有&#169;
+			</footer>
+		</form>	
+	</body>
+</html>
