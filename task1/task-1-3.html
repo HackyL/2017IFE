@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>三栏式布局</title>
+		<meta charset="UTF-8">
+		<title>task13</title>
 		<style>
 			body {
-				margin: 0;
-				padding: 0;
+				background-color: white;
+				padding: 0px;
+				margin: 0px;
 			}
-			#left,#right{
+			#box {
 				padding: 20px;
-				border: 1px solid #999;
-			}
-			#container {
-				padding: 20px;
-				margin-top: 20px;
-				margin-right: 20px;
-				margin-left: 20px;
-				border: 1px solid #999;
+				margin: 20px;
+				height: 420px;
 				background-color: #eee;
+				border: 1px solid #999;
 				overflow: hidden;
 			}
 			#left {
-				height: 80px;
+				padding: 20px;
 				width: 160px;
+				height: 80px;
 				background-color: #fff;
+				border: 1px solid #999;
 				float: left;
 				position: relative;
 				margin-right: 20px;
 			}
-			#center {
-				padding-left: 20px;
-				padding-right: 20px;
-				overflow: auto;
+			#right {
+				padding: 20px;
+				width: 80px;
+				height: 380px;
 				background-color: #fff;
 				border: 1px solid #999;
-			}
-			#right {
-				height: 380px;
-				width: 80px;
 				float: right;
-				background-color: #fff;
 				position: relative;
 				margin-left: 20px;
 			}
-			#p_img1 {
-				padding-right: 10px;
+			#center {
+				padding: 20px;
+				background-color: #fff;
+				border: 1px solid #999;
+				overflow: auto;
+			}
+			#p1 {
+				right: 20px;
 				position: absolute;
 				top: 120px;
 			}
-			#p_img2 {
-				padding-right: 20px;
+			#p2 {
+				right: 20px;
 				position: absolute;
 				top: 220px;
 			}
-			#p_img3 {
-				padding-right: 20px;
+			#p3 {
+				right: 20px;
 				position: absolute;
 				top: 320px;
-			}
-			#g_img {
-				float: left;
 			}
 			h5 {
 				position: absolute;
 				top: 0;
 				right: 20px;
+				font-size: 16px;
+				font-family: "微软雅黑";
 			}
 		</style>
 	</head>
 	<body>
-		<div id="container">
-			<div class="airtcle" id="left">
-				<img src="../img/hacky1.jpg" height="80px" width="80px" id="g_img"/>
-				<h5>团队Logo</h5>
+		<div id="box">
+			<div id="left">
+				<img src="../img/hacky1.jpg" padding="20px" height="80px" width="80px"/>
+				<h5>团队名称</h5>
 			</div>
-			<div class="airtcle" id="right">
-				<img src="../img/hacky1.jpg" class="pLogo" id="p_img0" height="80px" width="80px" />
-				<img src="../img/hacky1.jpg" class="pLogo" id="p_img1" height="80px" width="80px" />
-				<img src="../img/hacky1.jpg" class="pLogo" id="p_img2" height="80px" width="80px" />
-				<img src="../img/hacky1.jpg" class="pLogo" id="p_img3" height="80px" width="80px"/>
+			<div id="right">
+				<img src="../img/hacky1.jpg" height="80px" width="80px"/>
+				<img src="../img/hacky1.jpg" id="p1" height="80px" width="80px"/>
+				<img src="../img/hacky1.jpg" id="p2" height="80px" width="80px"/>
+				<img src="../img/hacky1.jpg" id="p3" height="80px" width="80px"/>
 			</div>
-			<div class="airtcle" id="center">
+			<div id="center">
 				<p>
-					关于你们团队的介绍。</br>
-					可以给我们解释一下团队名称的来历，或是分别介绍你们的团队成员。</br>
-					(以下为示例)</br>
-					百度Web前端技术学院（Baidu Institude of Front-End Technology简称IFE）是一个由百度人力资源部校园招聘组、
-					百度EFE团队联合出品的、面向在校大学生以及对前端技术有兴趣的前端在线学习平台，我们希望能够借助百度大量优秀的前端工程师以及丰富
-					的前端知识积累，帮助人们更加有趣、高效、系统地学习Web前端技术。</br>
-					2016春季班概述</br>
-					一年之计在于春，经过漫长的动机，又是开学之际，众多莘莘学子纷纷又回到校园，投入学习之中。百度前端技术学院在此时为大家带来了一道
-					前端学习的饕鬄盛宴。经过2年多的尝试与摸索，我们确认了实践、交流与分享，对于技术学习而言，是非常有效且高效的手段，因此，本次春季班，
-					我们特别搭建了一个线上平台系统，通过这个系统向学员们发送编码任务，学员们在这个系统上提交作业地址，进行相互的代码评审（Code Review）
-					与评价，同时在平台中积累自己的学习总结笔记并分享给大家。为了让大家更加有动力进行这些学习方式，我们在整个春季班的学习过程中，融入了竞赛模式，
-					任务完成得好的，评价仔细认真的，笔记写得对他人有帮助的，我们都会通过一套积分系统来进行排名。在头一个半月的任务“闯关”之后，我们还特意安排了
-					一个很有挑战性，能够发挥大家创新能力的大任务环节，具体任务当然暂时保密。这个终极BOSS的挑战会作为整个春季班的最终环节。
+				关于你们团队的介绍。</br>
+				可以给我们解释一下团队名称的来历，或是分别介绍你们的团队成员。</br>
+				(以下为示例)</br>
+				百度Web前端技术学院（Baidu Institude of Front-End Technology简称IFE）是一个由百度人力资源部校园招聘组、
+				百度EFE团队联合出品的、面向在校大学生以及对前端技术有兴趣的前端在线学习平台，我们希望能够借助百度大量优秀的前端工程师以及丰富
+				的前端知识积累，帮助人们更加有趣、高效、系统地学习Web前端技术。</br>
+				2016春季班概述</br>
+				一年之计在于春，经过漫长的动机，又是开学之际，众多莘莘学子纷纷又回到校园，投入学习之中。百度前端技术学院在此时为大家带来了一道
+				前端学习的饕鬄盛宴。经过2年多的尝试与摸索，我们确认了实践、交流与分享，对于技术学习而言，是非常有效且高效的手段，因此，本次春季班，
+				我们特别搭建了一个线上平台系统，通过这个系统向学员们发送编码任务，学员们在这个系统上提交作业地址，进行相互的代码评审（Code Review）
+				与评价，同时在平台中积累自己的学习总结笔记并分享给大家。为了让大家更加有动力进行这些学习方式，我们在整个春季班的学习过程中，融入了竞赛模式，
+				任务完成得好的，评价仔细认真的，笔记写得对他人有帮助的，我们都会通过一套积分系统来进行排名。在头一个半月的任务“闯关”之后，我们还特意安排了
+				一个很有挑战性，能够发挥大家创新能力的大任务环节，具体任务当然暂时保密。这个终极BOSS的挑战会作为整个春季班的最终环节。
 				</p>
 			</div>
 		</div>
