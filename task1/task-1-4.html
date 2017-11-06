@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>task-1-4</title>
+		<style>
+			.box {
+				width: 400px;
+				height: 200px;
+				background: #ccc;
+				position: fixed;
+				margin: auto;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+			}
+			#box1 {
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				border-radius: 0 0 100% 0;
+				top: 0;
+				left: 0;
+				background-color: #fc0;
+			}
+			#box2 {
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				border-radius: 100% 0 0 0;
+				right: 0;
+				bottom: 0;
+				background-color: #fc0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div id="box1"></div>
+			<div id="box2"></div>
+		</div>
+	</body>
+</html>
