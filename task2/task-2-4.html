@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>task-2-4</title>
+		<style>
+			#content {
+				display: flex;
+				font-size: 30px;
+			}
+			span {
+				background-color: crimson;
+				margin: 20px;
+				padding: 20px;
+			}
+			button {
+				font-size: 20px;
+				border-radius: 5px;
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input id="in" type="text">
+			<button id="bu1" onclick="bo1()">左侧入</button>
+			<button id="bu2" onclick="bo2()">右侧入</button>
+			<button id="bu3" onclick="bo3()">左侧出</button>
+			<button id="bu4" onclick="bo4()">右侧出</button>
+		</div>
+		
+		<div id="content">
+
+		</div>
+		<script type="text/javascript">	
+			var con=document.getElementById("content");
+			function bo1() {
+				var val=document.getElementById("in").value;
+				if(val=='')
+					alert("请输入一个数字！");
+				else {
+					var t=document.createElement("span");
+					t.innerText=val;
+					con.insertBefore(t,con.firstElementChild);
+				}
+			}
+			function bo2() {
+				var val=document.getElementById("in").value;
+				if(val=='')
+					alert("请输入一个数字！");
+				else {
+					var t=document.createElement("span");
+					t.innerText=document.getElementById("in").value;
+					con.appendChild(t);
+				}
+			}
+			function bo3() {
+				con.firstElementChild.remove();
+			}
+			function bo4() {
+				con.lastElementChild.remove();
+			}
+		</script>
+	</body>
+</html>
