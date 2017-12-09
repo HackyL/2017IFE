@@ -7,14 +7,17 @@
 			#content {
 				display: flex;
 				font-size: 30px;
+				align-items: flex-end;
 			}
 			span {
 				background-color: crimson;
 				width: 20px;
 				height: 200px;
 				margin: 2px;
+				padding-bottom: 0;
 				font-size: 18px;
 				color: white;
+				line-height:30px;
 			}
 			button {
 				font-size: 20px;
@@ -25,7 +28,7 @@
 	</head>
 	<body>
 		<div>
-			<input id="in" type="text">
+			<input id="in" type="text" style="width:200px" placeholder="请输入一个10到100的数字" /></br>
 			<button id="bu1" onclick="bo1()">左侧入</button>
 			<button id="bu2" onclick="bo2()">右侧入</button>
 			<button id="bu3" onclick="bo3()">左侧出</button>
@@ -40,7 +43,9 @@
 		<script type="text/javascript">	
 			var con=document.getElementById("content");
 			var count=0;
-			var time=Date.now();
+			var arr=new Array();
+			for(var x=0;x<=60;x++)
+				arr[x]=new Array();
 			function bo1() {
 				var val=document.getElementById("in").value;
 				if(val=='')
@@ -51,9 +56,9 @@
 					alert("元素达到60个，已饱和！");
 				else {
 					count++;
-					var t=document.createElement("span");
+					var t=document.cfreateElement("span");
 					t.innerText=val;
-					t.style.height=val+'px';
+					t.style.height=Number(val)*2+'px';
 					con.insertBefore(t,con.firstElementChild);
 				}
 			}
@@ -69,7 +74,7 @@
 					count++;
 					var t=document.createElement("span");
 					t.innerText=val;
-					t.style.height=val+'px';
+					t.style.height=Number(val)*2+'px';
 					con.appendChild(t);
 				}
 			}
@@ -80,33 +85,41 @@
 				con.lastElementChild.remove();
 			}
 			function bo5() {
+				var nnnum=0;
 				for(var i=0;i<con.children.length;i++) {
 					for(var j=i;j<con.children.length;j++) {
-						if(con.children[i].style.height>con.children[j].style.height) {
+						if(con.children[i].innerText>con.children[j].innerText) {
 							var t=con.children[i].style.height;
+							var tnum=con.children[i].innerText;
 							con.children[i].style.height=con.children[j].style.height;
+							con.children[i].innerText=con.children[j].innerText;
 							con.children[j].style.height=t;
+							con.children[j].innerText=tnum;
+							nnnum++;
+							
 						}
 						
 					}
 				}
+				
+				alert(nnnum);
+				nnnum=0;
 			}
 			function bo6() {
 				while(con.hasChildNodes()) {
 					con.removeChild(con.firstChild);
 				}
 				for(var i=0;i<60;i++) {
+					count++;
 					var num=Math.random()*90+10;
 					num=parseInt(num,10);
 					var t=document.createElement("span");
 					t.innerText=num;
-					t.style.height=num+'px';
+					t.style.height=Number(num)*2+'px';
 					con.appendChild(t);
 				}
 			}
-			function sleep(d){  
-    			while(time-Date.now()<=d);  
-			}   
+ 
 		</script>
 	</body>
 </html>
